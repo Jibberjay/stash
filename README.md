@@ -1,38 +1,36 @@
-# sv
+# stash
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+A finance app for people who hate numbers (powered by [Svelte](https://svelte.dev)/[`sv`](https://github.com/sveltejs/cli))
 
-## Creating a project
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Development
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+To test out your project, start a development server by running the following in the terminal:
 
 ```bash
+# start server
 npm run dev
 
-# or start the server and open the app in a new browser tab
+# or start the server and open the project in a new tab
 npm run dev -- --open
 ```
 
+And use `ctrl/cmd + c` to kill the server!
+
 ## Building
 
-To create a production version of your app:
+For creating a production build of the project:
 
 ```bash
+# create a production build
 npm run build
+
+# pr just preview the production build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+> 💡 To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Current plan: deploy on [Vercel](https://vercel.com/) (not started yet)
+
+TODO: port more code from the old [Pocket Cash](https://github.com/Jibberjay/pocket-cash/blob/main/index.html) project
